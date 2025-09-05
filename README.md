@@ -60,11 +60,15 @@ mv hadoop-3.3.6 hadoop
 ```
 
 ### Set Environment Variables
-Edit `~/.bashrc`:
+```bash 
+nano ~/.bashrc
+```
 ```bash
 export HADOOP_HOME=$HOME/hadoop
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export PATH=$PATH:$JAVA_HOME/bin
 ```
 Reload:
 ```bash
